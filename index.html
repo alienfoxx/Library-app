@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Library</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="nav">
+            <h1>simple Library</h1>
+        </div>
+    </header>
+    <div class="main-form">
+        <div id="addbook-btn">
+            <button type="submit" id="saveBook" style="display: none";>Save Book</button>
+        </div>
+        <form id ="bookForm" action="" style="display: none;"  >
+            <label for="title">Book Title</label>
+                <input type="text" id="title">
+            <label for="autor">Authore</label>
+                <input type="text" id="autor">
+            <label for="pages">Pages</label>
+                <input type="number" id="pages"><br>
+        </form>
+        <div class="read-form" style="display: none;">
+            <label for="read-it">Read it</label>
+                <input type="radio" id="read-it" value="yes" name="check">
+            <label for="no-read"> not read</label>
+                <input type="radio" id="no-read" value="no" name="check">
+        </div>
+        <div id="addbook-btn">
+            <button type="submit " id="addBook">Add New Book</button>
+            <button type="submit" id="seeBook">See Book</button>
+        </div>
+
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="main.js"></script>  
+</body>
+</html>
