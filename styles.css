@@ -29,6 +29,7 @@ header{
    align-content: center;
    width: 100%;
    justify-content: center;
+  
    
 }
 .main-form form{
@@ -40,6 +41,7 @@ header{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 250px;
     border-radius: 15px;
+    
 }
 .main-form form label{
     font-weight: bold;
@@ -49,7 +51,7 @@ header{
 .main-form form input{
     height: 30px;
 }
-.read-form{
+div.read-form{
     height: 80px;
     margin-top: 50px;
     display: flex;
@@ -57,6 +59,7 @@ header{
     justify-content: space-around;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
 }
 .read-form label{
     font-size: 1.5rem;
@@ -73,10 +76,21 @@ input #autor{
     width: 80px;
     
 }
+button#seeBook{
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+button#addBook{
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
 #addbook-btn{
     width: 500px;
     margin-top: 20px;
     display: flex;
+    
     justify-content: space-between;
     
 }
@@ -101,4 +115,57 @@ button#saveBook{
 #addbook-btn button:hover{
     background-color: black;
     color: #e7eaf6;
+}
+.book-card{
+    margin-top: 20px;
+    display: flex;
+    width: 20%;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    text-align: center;
+    border:  1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+
+}
+div#library{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+    gap: 20px;
+    
+    
+}
+.read-status{
+    background-color: rgb(238, 151, 141);
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+}
+.remove-btn{
+    background-color: salmon;
+    height: 80px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+}
+button.toggle-read-btn{
+    background-color: rgb(62, 134, 72);
+    height: 100px;
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 150px;
+    border: none;
+    border-radius: 10px; 
+}
+button.toggle-read-btn:hover{
+    background-color: rgb(212, 199, 199);
+    color: green;
 }
